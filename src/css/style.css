@@ -240,7 +240,7 @@ nav a {
 
 .navbar-custom-sub .dropdown:hover .dropdown-menu {
 	display: block;
-	margin-top: 0; // remove the gap so it doesn't close
+	margin-top: 0; 
 }
 
 .navbar-custom-sub .dropdown-menu {
@@ -515,6 +515,11 @@ img.img-thumbnail.doctor-img {
 	padding: 9px;
 	color: #444444;
 }
+
+#doctor .li-green {
+	color: #2ba7a1;
+}
+
 
 /* Dermatology Section */
 #dermatology {
