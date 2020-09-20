@@ -367,7 +367,7 @@ nav a {
 }
 
 .intro .intro-body img {
-	width: 450px;
+	width: 100%;
 }
 
 .intro .intro-body h1 {
@@ -419,6 +419,9 @@ nav a {
 		letter-spacing: 1px;
 		margin-bottom: 100px;
 		color: rgba(255,255,255,0.9);
+	}
+	.intro .intro-body img {
+		width: 450px;
 	}
 }
 
@@ -476,16 +479,33 @@ nav a {
 
 /* News Section */
 #news {
-	padding: 80px 0;
-	background: #FFFFFF;
+	background: var(--light-blue);
 }
 
-#news h5 {
+#news .main {
+	background-color: #FFFFFF;
+	padding: 50px;
+}
+
+#news .main h5 {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 1;
 	font-family: var(--brandon);
 	text-transform: uppercase;
+}
+
+#news .sidebar {
+	padding: 100px 30px;
+}
+
+#news .sidebar .img-logo {
+	width: 100px;
+	margin: 10px;
+}
+
+#news .sidebar .btn-default {
+	width: 100%;
 }
 
 
@@ -596,8 +616,22 @@ nav a {
 
 
 /* Doctor Section */
-#doctor {
-	padding: 20px 0 100px;
+#doctor .intro {
+	display: table;
+	width: 100%;
+	max-height: 560px;
+	height: auto;
+	padding: 175px 0 ;
+	color: #FFFFFF;
+	background: var(--bg-grey), url(../img/header-1.jpg) no-repeat center left 45%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#doctor .main {
+	padding: 25px 0px 100px;
 }
 
 #doctor .img-frame {
@@ -606,25 +640,37 @@ nav a {
 	margin-bottom:20px;
 }
 
-img.img-thumbnail.doctor-img {
+#doctor img.img-thumbnail.doctor-img {
 	width: 200px;
 	border: 0;
 	background-color: #f6f6f6;
 }
 
-#doctor h3 {
-	margin-top: 0px;
-	color: #2ba7a1;
-}
-#doctor a {
-	color:#FFFFFF;
-}
 #doctor .bio {
 	padding:0px 20px;
 }
+
 #doctor .bio h2 {
 	margin-top:0px;
+	font-style: normal;
 }
+
+#doctor .bio h2 small{
+	font-style: italic;
+}
+
+#doctor .bio h3 {
+	margin-top: 0px;
+}
+
+#doctor .bio h3 a {
+	color: #444444;
+}
+
+#doctor .bio h3 a:hover {
+	color: var(--yellow);
+}
+
 #doctor .thumbnail {
 	background: transparent;
 	border: 0;
@@ -636,8 +682,12 @@ img.img-thumbnail.doctor-img {
 	color: #444444;
 }
 
-#doctor .li-green {
-	color: #2ba7a1;
+#doctor .thumbnail b {
+	color: var(--dark-blue)
+}
+
+#doctor .list-items .fa {
+	color: var(--purple);
 }
 
 /* Treatment Section */
@@ -769,11 +819,32 @@ img.img-thumbnail.doctor-img {
 	padding: 20px 0 100px;
 }
 
+#locations h1{
+	color: #444444;
+}
+
+#locations .location {
+	padding: 25px 0px 75px;
+}
+
+#locations h3{
+	font-family: var(--brandon);
+}
+
+#locations .map {
+	padding:0px 60px;
+}
+
 #locations .address hr {
 	margin: 15px 0px;
 	width: 200px;
 }
 
+@media (max-width:768px) {
+	#locations .map {
+		padding: 0px 20px;
+	}
+}
 
 /* Patients Section */
 #patients {
@@ -824,8 +895,11 @@ footer h2 {
 	margin: 0;
 }
 
-footer h3 {
-    color: #FFFFFF;
+footer h4 {
+	color: #FFFFFF;
+    font-family: var(--brandon);
+    font-weight: bold;
+	text-transform: uppercase;
 }
 
 footer hr {
@@ -857,7 +931,7 @@ footer .fa-inverse {
 	color: var(--light-blue);
 }
 #footer a:hover {
-	color: var(--medium-blue);
+	color: var(--yellow);
 }
 #footer p {
 	font-size: 16px;
