@@ -505,22 +505,36 @@ nav a {
 	-o-background-size: cover;
 }
 
-#about .p-100 {
-	padding: 100px;
-}
-
 #about .bg-blue {
 	background-color: var(--light-blue);
+}
+
+#about .main {
+	padding: 100px;
+	background-color: #FFFFFF;
+}
+
+#about strong {
+	font-size: 18px;
+}
+
+#about .sidebar {
 	padding: 100px 30px;
 }
 
-#about .img-logo {
+#about .sidebar .img-logo {
 	width: 100px;
 	margin: 10px;
 }
 
-#about .btn-default {
+#about .sidebar .btn-default {
 	width: 100%;
+}
+
+@media (max-width:768px) {
+	#about .main {
+		padding: 80px 40px;
+	}
 }
 
 /* Careers Section */
@@ -626,15 +640,110 @@ img.img-thumbnail.doctor-img {
 	color: #2ba7a1;
 }
 
-
-/* Dermatology Section */
-#dermatology {
-	padding: 20px 0 100px;
+/* Treatment Section */
+#treatment .intro {
+	display: table;
+	width: 100%;
+	max-height: 560px;
+	height: auto;
+	padding: 175px 0 ;
+	color: #FFFFFF;
+	background: var(--bg-grey), url(../img/header-3.jpg) no-repeat center left 45%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
-#dermatology h3{
-	font-family: var(--brandon);
-	margin-bottom: 25px;
+#treatment .bg-blue {
+	background-color: var(--light-blue);
+}
+
+#treatment .main {
+	padding: 100px;
+	background-color: #FFFFFF;
+}
+
+#treatment .fa{
+	color: var(--medium-blue);
+}
+
+#treatment .sidebar {
+	padding: 100px 30px;
+}
+
+#treatment .sidebar .img-logo {
+	width: 100px;
+	margin: 10px;
+}
+
+#treatment .sidebar .btn-default {
+	width: 100%;
+}
+
+@media (max-width:768px) {
+	#treatment .main {
+		padding: 80px 40px;
+	}
+}
+
+/* Dermatology Section */
+#dermatology .intro {
+	display: table;
+	width: 100%;
+	max-height: 560px;
+	height: auto;
+	padding: 175px 0 ;
+	color: #FFFFFF;
+	background: var(--bg-gradient), url(../img/header-4.jpg) no-repeat center left 45%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#dermatology .bg-blue {
+	background-color: var(--light-blue);
+}
+
+#dermatology .main {
+	padding: 100px;
+	background-color: #FFFFFF;
+}
+
+#dermatology strong {
+	font-size: 18px;
+}
+
+#dermatology .panel-title > a{
+	color: var(--dark-blue);
+}
+
+#dermatology .panel-title > a:hover{
+	color: var(--yellow);
+}
+
+#dermatology .fa{
+	color: var(--medium-blue);
+}
+
+#dermatology .sidebar {
+	padding: 100px 30px;
+}
+
+#dermatology .sidebar .img-logo {
+	width: 100px;
+	margin: 10px;
+}
+
+#dermatology .sidebar .btn-default {
+	width: 100%;
+}
+
+@media (max-width:768px) {
+	#dermatology .main {
+		padding: 80px 40px;
+	}
 }
 
 #dermatology .panel-group {
@@ -654,8 +763,6 @@ img.img-thumbnail.doctor-img {
 	border-radius: 0px;
 	border-bottom: 1px solid #DEDEDE;
 }
-
-
 
 /* Locations Section */
 #locations {
